@@ -38,8 +38,17 @@ int main()
     }
     
  cout <<"The Sum OF elements of 2d array is :"<<sum<<endl;
- cout<< "The maximum element in this 2d array is :"<<first<<endl;
- cout <<"The minimum number in this 2d array is :"<<least<<endl;
+ cout<< "\nThe maximum element in this 2d array is :"<<first<<endl;
+ cout <<"\nThe minimum number in this 2d array is :"<<least<<endl;
+ cout<<"\n\n\nThe matrix before transpose."<<endl;
+    for(int i=0;i<row_s;i++)
+    {
+        for(int j=0;j<col_s;j++)
+        {
+            cout <<a[i][j]<<" ";
+        }
+        cout <<endl;
+    }
  cout <<"The transpose matrix is: "<<endl;
     for(int i=0;i<col_s;i++)
     {

@@ -7,8 +7,14 @@ int  main()
     cout <<"The size of string :"<<endl;
     cin>>n;
     char *a=new char[n+1];
-    cout <<"Enter any word which should not have any space and should be less then: "<<n<<" characters."<<endl;
-    cin>>a; 
+    cout <<"Enter any string without spaces, should contain maximum: "<<n<<" characters."<<endl;
+    
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+
+    a[n]='\0';
+
     for(int i=0;i<n/2;i++)
         {
             if(*(a+i) != *(a+n-i-1)){
