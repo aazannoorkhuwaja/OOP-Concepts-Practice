@@ -4,13 +4,11 @@ int  main()
 {
     int n,count=0;
     bool palindro=true;
-    cout <<"The size of array :"<<endl;
+    cout <<"The size of string :"<<endl;
     cin>>n;
     char *a=new char[n+1];
     cout <<"Enter any word which should not have any space and should be less then: "<<n<<" characters."<<endl;
     cin>>a; 
-
-
     for(int i=0;i<n/2;i++)
         {
             if(*(a+i) != *(a+n-i-1)){
