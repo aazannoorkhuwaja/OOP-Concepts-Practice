@@ -1,0 +1,21 @@
+# C++ Compiled Files
+*.out
+*.o
+*.obj
+*.exe
+*.dll
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary Files
+debug/
+bin/
+temp/
+
+# OS generated files
+.DS_Store
+Thumbs.db
