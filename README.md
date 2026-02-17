@@ -12,11 +12,20 @@ Welcome to my **OOP Learning** repository! 🚀 This collection documents my pra
 
 This repository is organized into Labs, containing weekly tasks and exercises.
 
+### 📚 OOP Theory (`/OOP_Theory`)
+Lecture notes, slides, and revision materials.
+
+### 📝 Assignments (`/Assignments`)
+Solutions and documents for course assignments.
+
+### 💻 Practice Code (`/Practice_Code`)
+Extra practice questions and final exam preparation.
+
 ### 🧪 OOP Labs (`/OOP_Lab`)
 Practical implementations and coding exercises.
 
 - **[Lab 01](./OOP_Lab/Lab_01)**: Introduction to C++ classes.
-- **[Lab 02](./OOP_Lab/Lab_02)** to **[Lab 08](./OOP_Lab/Lab_08)**: Progressive labs covering constructors, inheritance, operator overloading, and more.
+- **[Lab 02](./OOP_Lab/Lab_02)** to **[Lab 08](./OOP_Lab/Lab_08)**: Progressive labs covering constructors, inheritance based on `Lab Task Opp`.
 
 *(More materials will be added as I organize them)*
 

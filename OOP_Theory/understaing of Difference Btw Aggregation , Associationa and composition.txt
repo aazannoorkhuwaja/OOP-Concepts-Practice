@@ -1,0 +1,72 @@
+
+🧠 Summary Table
+
+Concept		Ownership	Lifetime Control	Example	Code Indicator
+Association	  ❌ No		❌No		Teacher↔Student	One class references another
+
+Aggregation	✔️ Yes (weak)		❌ No		Team ↔ Player	Object passed into the class
+
+Composition	✔️ Yes (strong)	✔️ Yes		House ↔ Room	Object created inside the class
+
+
+
+
+Ask Yourself	If Yes →
+"Is the object created inside the class?"			→ Composition
+"Is the object passed from outside, but used by the class?"	→ Aggregation
+"Is there just a reference, no real ownership?"			→ Association
+
+
+✅ 1. Association (Ta'alluq / Link)
+Sirf link hota hai do classes ke darmiyan.
+
+Koi ownership nahi hoti.
+
+Object na create karte ho, na delete.
+
+Bus temporary use karte ho.
+
+Example:
+Doctor aur Hospital — Doctor kisi Hospital se linked hai, lekin zaroori nahi usi mein ho.
+
+cpp
+Copy
+Edit
+// Doctor hospital ka reference rakhta hai, na create karta hai na destroy.
+✅ 2. Aggregation (Weak Ownership / Baironi Rishte)
+Object bahar se pass hota hai class ko.
+
+Class usay use karti hai lekin delete nahi karti.
+
+Yeh ek weak relationship hai.
+
+Example:
+University aur Students — Student dusri jagah bhi parh sakta hai, University sirf usko reference karti hai.
+
+cpp
+Copy
+Edit
+// Student object bahar bana hota hai, University uska pointer rakhti hai.
+✅ 3. Composition (Strong Ownership / Androoni Rishte)
+Object class ke andar create hota hai.
+
+Class usay destroy bhi karti hai.
+
+Agar parent class destroy ho, to child bhi destroy ho jata hai.
+
+Yeh strong relationship hai.
+
+Example:
+House aur Rooms — Agar House destroy ho gaya, to Rooms bhi khatam.
+
+cpp
+Copy
+Edit
+// Room ka object House ke andar banaya gaya aur destructor mein delete bhi kiya.
+📌 Ek Line Mein Farq:
+Association → Bas link hai (na create, na delete)
+
+Aggregation → Bahar se mila object (use kiya, lekin delete nahi kiya)
+
+Composition → Andar hi bana object (use bhi kiya, delete bhi kiya)
+
